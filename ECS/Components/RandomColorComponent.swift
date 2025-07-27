@@ -1,4 +1,5 @@
 import RealityKit
+import Foundation
 
 struct RandomColorComponent: Component {
     var interval: TimeInterval = 1

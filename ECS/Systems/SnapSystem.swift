@@ -10,7 +10,7 @@ class SnapSystem: System {
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {
             if let snap = entity.components[SnapComponent.self] {
                 let pos = entity.position / snap.gridSize
-                entity.position = simd_round(pos) * snap.gridSize
+                entity.position = pos.rounded(.awayFromZero) * snap.gridSize
             }
         }
     }

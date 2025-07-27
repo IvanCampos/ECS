@@ -261,7 +261,7 @@ struct ImmersiveView: View {
             // Stretch component example.
             let stretchCube = makeCube()
             stretchCube.position = nextPosition()
-            stretchCube.components.set(StretchComponent(axis: [1,0,0], amplitude: 0.2, speed: 2))
+            stretchCube.components.set(StretchComponent(axis: [1,0,0], amplitude: 0.2, speed: 0.2))
             anchor.addChild(stretchCube)
 
             // RandomColor component example.
@@ -327,7 +327,7 @@ struct ImmersiveView: View {
             // RandomScale component example.
             let randomScaleCube = makeCube()
             randomScaleCube.position = nextPosition()
-            randomScaleCube.components.set(RandomScaleComponent(range: 0.2))
+            randomScaleCube.components.set(RandomScaleComponent(range: 0.02))
             anchor.addChild(randomScaleCube)
 
             // Wobble component example.

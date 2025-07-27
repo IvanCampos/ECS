@@ -5,7 +5,7 @@ import SwiftUI
 class PulseColorSystem: System {
     private static let query = EntityQuery(where: .has(PulseColorComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)

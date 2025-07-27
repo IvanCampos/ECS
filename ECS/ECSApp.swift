@@ -16,6 +16,36 @@ struct ECSApp: App {
     init() {
         MyComponent.registerComponent()
         MySystem.registerSystem()
+
+        MoveComponent.registerComponent()
+        MoveSystem.registerSystem()
+
+        ScaleComponent.registerComponent()
+        ScaleSystem.registerSystem()
+
+        RotateComponent.registerComponent()
+        RotateSystem.registerSystem()
+
+        PulseComponent.registerComponent()
+        PulseSystem.registerSystem()
+
+        BlinkComponent.registerComponent()
+        BlinkSystem.registerSystem()
+
+        BobComponent.registerComponent()
+        BobSystem.registerSystem()
+
+        WanderComponent.registerComponent()
+        WanderSystem.registerSystem()
+
+        LifetimeComponent.registerComponent()
+        LifetimeSystem.registerSystem()
+
+        GravityComponent.registerComponent()
+        GravitySystem.registerSystem()
+
+        ColorComponent.registerComponent()
+        ColorSystem.registerSystem()
     }
     
     var body: some SwiftUI.Scene {

@@ -12,6 +12,10 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            Text("ECS Demo")
+                .font(.headline)
+                .fontWeight(.heavy)
+                .padding(.vertical)
             ToggleImmersiveSpaceButton()
         }
     }

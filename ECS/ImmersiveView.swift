@@ -15,9 +15,9 @@ struct ImmersiveView: View {
     var body: some View {
         RealityView { content in
             // Add the initial RealityKit content
-            if let immersiveContentEntity = try? await Entity(named: "SkyDome", in: realityKitContentBundle) {
-                content.add(immersiveContentEntity)
-            }
+//            if let immersiveContentEntity = try? await Entity(named: "SkyDome", in: realityKitContentBundle) {
+//                content.add(immersiveContentEntity)
+//            }
             
             // Anchor one meter in front of the user’s head pose. (.head)
             let anchor = AnchorEntity()
@@ -337,7 +337,7 @@ struct ImmersiveView: View {
             // Spiral component example.
             let spiralCube = makeCube()
             spiralCube.position = nextPosition()
-            spiralCube.components.set(SpiralComponent(center: spiralCube.position, radius: 0.2, speed: 2, heightSpeed: 0.1))
+            spiralCube.components.set(SpiralComponent(center: spiralCube.position, radius: 0.2, speed: 0.2, heightSpeed: 0.01))
             attachLabel(to: spiralCube, text: "SpiralComponent")
             anchor.addChild(spiralCube)
 
@@ -414,21 +414,24 @@ struct ImmersiveView: View {
             // MoveX component example.
             let moveXCube = makeCube()
             moveXCube.position = nextPosition()
-            moveXCube.components.set(MoveXComponent(speed: 0.1))
+            moveXCube.model?.materials = [UnlitMaterial(color: .cyan.withAlphaComponent(0.3))]
+            moveXCube.components.set(MoveXComponent(speed: 0.01))
             attachLabel(to: moveXCube, text: "MoveXComponent")
             anchor.addChild(moveXCube)
 
             // MoveY component example.
             let moveYCube = makeCube()
             moveYCube.position = nextPosition()
-            moveYCube.components.set(MoveYComponent(speed: 0.1))
+            moveYCube.model?.materials = [UnlitMaterial(color: .cyan.withAlphaComponent(0.3))]
+            moveYCube.components.set(MoveYComponent(speed: 0.01))
             attachLabel(to: moveYCube, text: "MoveYComponent")
             anchor.addChild(moveYCube)
 
             // MoveZ component example.
             let moveZCube = makeCube()
             moveZCube.position = nextPosition()
-            moveZCube.components.set(MoveZComponent(speed: 0.1))
+            moveZCube.model?.materials = [UnlitMaterial(color: .cyan.withAlphaComponent(0.3))]
+            moveZCube.components.set(MoveZComponent(speed: 0.01))
             attachLabel(to: moveZCube, text: "MoveZComponent")
             anchor.addChild(moveZCube)
 
@@ -512,7 +515,7 @@ struct ImmersiveView: View {
             // SpiralMove component example.
             let spiralMoveCube = makeCube()
             spiralMoveCube.position = nextPosition()
-            spiralMoveCube.components.set(SpiralMoveComponent(center: spiralMoveCube.position, radius: 0.2, speed: 2, angle: 0, heightSpeed: 0.05))
+            spiralMoveCube.components.set(SpiralMoveComponent(center: spiralMoveCube.position, radius: 0.2, speed: 0.2, angle: 0, heightSpeed: 0.05))
             attachLabel(to: spiralMoveCube, text: "SpiralMoveComponent")
             anchor.addChild(spiralMoveCube)
 
@@ -736,6 +739,8 @@ struct ImmersiveView: View {
             // ScaleX component example.
             let scaleXCube = makeCube()
             scaleXCube.position = nextPosition()
+            scaleXCube.model?.materials = [UnlitMaterial(color: .white.withAlphaComponent(0.1))]
+            scaleXCube.components.set(GlowComponent(intensity: 0.5))
             scaleXCube.components.set(ScaleXComponent(rate: 0.1))
             attachLabel(to: scaleXCube, text: "ScaleXComponent")
             anchor.addChild(scaleXCube)
@@ -743,13 +748,17 @@ struct ImmersiveView: View {
             // ScaleY component example.
             let scaleYCube = makeCube()
             scaleYCube.position = nextPosition()
+            scaleYCube.model?.materials = [UnlitMaterial(color: .white.withAlphaComponent(0.1))]
             scaleYCube.components.set(ScaleYComponent(rate: 0.1))
+            scaleYCube.components.set(GlowComponent(intensity: 0.5))
             attachLabel(to: scaleYCube, text: "ScaleYComponent")
             anchor.addChild(scaleYCube)
 
             // ScaleZ component example.
             let scaleZCube = makeCube()
             scaleZCube.position = nextPosition()
+            scaleZCube.model?.materials = [UnlitMaterial(color: .white.withAlphaComponent(0.1))]
+            scaleZCube.components.set(GlowComponent(intensity: 0.5))
             scaleZCube.components.set(ScaleZComponent(rate: 0.1))
             attachLabel(to: scaleZCube, text: "ScaleZComponent")
             anchor.addChild(scaleZCube)
@@ -841,3 +850,4 @@ struct ImmersiveView: View {
 //    ImmersiveView()
 //        .environment(AppModel())
 //}
+

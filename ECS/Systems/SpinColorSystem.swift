@@ -1,5 +1,7 @@
 import RealityKit
+import CoreFoundation
 import simd
+import UIKit
 
 class SpinColorSystem: System {
     private static let query = EntityQuery(where: .has(SpinColorComponent.self))

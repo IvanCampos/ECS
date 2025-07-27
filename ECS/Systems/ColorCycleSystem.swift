@@ -5,7 +5,7 @@ import SwiftUI
 class ColorCycleSystem: System {
     private static let query = EntityQuery(where: .has(ColorCycleComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)

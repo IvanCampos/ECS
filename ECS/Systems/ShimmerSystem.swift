@@ -4,7 +4,7 @@ import SwiftUI
 class ShimmerSystem: System {
     private static let query = EntityQuery(where: .has(ShimmerComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)

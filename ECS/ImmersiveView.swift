@@ -111,7 +111,7 @@ struct ImmersiveView: View {
             // Grow component example.
             let growCube = makeCube()
             growCube.position = nextPosition()
-            growCube.components.set(GrowComponent(rate: 0.1))
+            growCube.components.set(GrowComponent(rate: 0.001))
             anchor.addChild(growCube)
 
             // Jitter component example.

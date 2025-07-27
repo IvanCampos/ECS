@@ -19,9 +19,9 @@ struct ImmersiveView: View {
                 content.add(immersiveContentEntity)
             }
             
-            // Anchor one meter in front of the user’s head pose.
-            let anchor = AnchorEntity(.head)
-            anchor.position = [0, 0, -1.0]
+            // Anchor one meter in front of the user’s head pose. (.head)
+            let anchor = AnchorEntity()
+            anchor.position = [0, 1.4, -1.0]
 
             // Helper for creating a cube entity at the next grid position.
             var index = 0

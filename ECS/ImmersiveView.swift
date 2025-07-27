@@ -840,6 +840,29 @@ struct ImmersiveView: View {
             attachLabel(to: orbitXCube, text: "OrbitXComponent")
             anchor.addChild(orbitXCube)
 
+            // HitHighlight component example.
+            let hitCube = makeCube()
+            hitCube.position = nextPosition()
+            hitCube.components.set(HitHighlightComponent())
+            hitCube.components.set(CollisionComponent(shapes: [.generateBox(size: 0.25)]))
+            attachLabel(to: hitCube, text: "HitHighlightComponent")
+            anchor.addChild(hitCube)
+
+            // ProximityDetector component example.
+            let proximityCube = makeCube()
+            proximityCube.position = nextPosition()
+            proximityCube.components.set(ProximityDetectorComponent(radius: 0.4))
+            attachLabel(to: proximityCube, text: "ProximityDetectorComponent")
+            anchor.addChild(proximityCube)
+
+            // BoundaryEnforcer component example.
+            let boundaryCube = makeCube()
+            boundaryCube.position = nextPosition()
+            boundaryCube.components.set(MoveComponent(velocity: [0.2,0,0]))
+            boundaryCube.components.set(BoundaryEnforcerComponent(minBounds: [-1,-1,-1], maxBounds: [1,1,-0.5]))
+            attachLabel(to: boundaryCube, text: "BoundaryEnforcerComponent")
+            anchor.addChild(boundaryCube)
+
             content.add(anchor)
             
         }

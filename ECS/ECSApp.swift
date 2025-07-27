@@ -346,6 +346,15 @@ struct ECSApp: App {
 
         OrbitXComponent.registerComponent()
         OrbitXSystem.registerSystem()
+
+        HitHighlightComponent.registerComponent()
+        HitHighlightSystem.registerSystem()
+
+        ProximityDetectorComponent.registerComponent()
+        ProximityDetectorSystem.registerSystem()
+
+        BoundaryEnforcerComponent.registerComponent()
+        BoundaryEnforcerSystem.registerSystem()
     }
     
     var body: some SwiftUI.Scene {

@@ -228,6 +228,126 @@ struct ImmersiveView: View {
             wanderCube.components.set(WanderComponent(range: 0.2))
             anchor.addChild(wanderCube)
 
+            // Bounce component example.
+            let bounceCube = makeCube()
+            bounceCube.position = nextPosition()
+            bounceCube.components.set(BounceComponent(amplitude: 0.1, speed: 2, origin: bounceCube.position))
+            anchor.addChild(bounceCube)
+
+            // Twist component example.
+            let twistCube = makeCube()
+            twistCube.position = nextPosition()
+            twistCube.components.set(TwistComponent(axis: [0,1,0], speed: .pi))
+            anchor.addChild(twistCube)
+
+            // Flip component example.
+            let flipCube = makeCube()
+            flipCube.position = nextPosition()
+            flipCube.components.set(FlipComponent(axis: [1,0,0], speed: .pi))
+            anchor.addChild(flipCube)
+
+            // Hover component example.
+            let hoverCube = makeCube()
+            hoverCube.position = nextPosition()
+            hoverCube.components.set(HoverComponent(height: 0.1, amplitude: 0.05, speed: 2, origin: hoverCube.position))
+            anchor.addChild(hoverCube)
+
+            // Seek component example.
+            let seekCube = makeCube()
+            seekCube.position = nextPosition()
+            seekCube.components.set(SeekComponent(target: .zero, speed: 0.2))
+            anchor.addChild(seekCube)
+
+            // Stretch component example.
+            let stretchCube = makeCube()
+            stretchCube.position = nextPosition()
+            stretchCube.components.set(StretchComponent(axis: [1,0,0], amplitude: 0.2, speed: 2))
+            anchor.addChild(stretchCube)
+
+            // RandomColor component example.
+            let randomColorCube = makeCube()
+            randomColorCube.position = nextPosition()
+            randomColorCube.components.set(RandomColorComponent(interval: 1))
+            anchor.addChild(randomColorCube)
+
+            // Teleport component example.
+            let teleportCube = makeCube()
+            teleportCube.position = nextPosition()
+            teleportCube.components.set(TeleportComponent(interval: 2, range: 0.2))
+            anchor.addChild(teleportCube)
+
+            // Transparency component example.
+            let transparencyCube = makeCube()
+            transparencyCube.position = nextPosition()
+            transparencyCube.components.set(TransparencyComponent(rate: 0.2, alpha: 1))
+            anchor.addChild(transparencyCube)
+
+            // Spiral component example.
+            let spiralCube = makeCube()
+            spiralCube.position = nextPosition()
+            spiralCube.components.set(SpiralComponent(center: spiralCube.position, radius: 0.2, speed: 2, heightSpeed: 0.1))
+            anchor.addChild(spiralCube)
+
+            // PulseColor component example.
+            let pulseColorCube = makeCube()
+            pulseColorCube.position = nextPosition()
+            pulseColorCube.components.set(PulseColorComponent(colorA: [1,1,1], colorB: [1,0,0], speed: 2))
+            anchor.addChild(pulseColorCube)
+
+            // Flicker component example.
+            let flickerCube = makeCube()
+            flickerCube.position = nextPosition()
+            flickerCube.components.set(FlickerComponent(probability: 0.1))
+            anchor.addChild(flickerCube)
+
+            // Snap component example.
+            let snapCube = makeCube()
+            snapCube.position = nextPosition()
+            snapCube.components.set(SnapComponent(gridSize: 0.1))
+            anchor.addChild(snapCube)
+
+            // Beeline component example.
+            let beelineCube = makeCube()
+            beelineCube.position = nextPosition()
+            beelineCube.components.set(BeelineComponent(direction: [0,0,-1], speed: 0.2))
+            anchor.addChild(beelineCube)
+
+            // Boomerang component example.
+            let boomerangCube = makeCube()
+            boomerangCube.position = nextPosition()
+            boomerangCube.components.set(BoomerangComponent(start: boomerangCube.position, end: boomerangCube.position + [0,0,0.3], speed: 0.2))
+            anchor.addChild(boomerangCube)
+
+            // Twinkle component example.
+            let twinkleCube = makeCube()
+            twinkleCube.position = nextPosition()
+            twinkleCube.components.set(TwinkleComponent(interval: 0.5))
+            anchor.addChild(twinkleCube)
+
+            // RandomScale component example.
+            let randomScaleCube = makeCube()
+            randomScaleCube.position = nextPosition()
+            randomScaleCube.components.set(RandomScaleComponent(range: 0.2))
+            anchor.addChild(randomScaleCube)
+
+            // Wobble component example.
+            let wobbleCube = makeCube()
+            wobbleCube.position = nextPosition()
+            wobbleCube.components.set(WobbleComponent(axis: [1,0,0], amplitude: .pi/8, speed: 3))
+            anchor.addChild(wobbleCube)
+
+            // Align component example.
+            let alignCube = makeCube()
+            alignCube.position = nextPosition()
+            alignCube.components.set(AlignComponent())
+            anchor.addChild(alignCube)
+
+            // ZigZag component example.
+            let zigzagCube = makeCube()
+            zigzagCube.position = nextPosition()
+            zigzagCube.components.set(ZigZagComponent(axis: [1,0,0], speed: 0.2, length: 0.3))
+            anchor.addChild(zigzagCube)
+
             content.add(anchor)
             
         }

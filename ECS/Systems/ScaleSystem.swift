@@ -8,7 +8,7 @@ class ScaleSystem: System {
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {
-            if var scale = entity.components[ScaleComponent.self] {
+            if let scale = entity.components[ScaleComponent.self] {
                 let factor = 1 + scale.rate * dt
                 entity.scale *= SIMD3<Float>(repeating: factor)
             }

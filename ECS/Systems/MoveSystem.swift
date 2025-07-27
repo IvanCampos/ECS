@@ -9,7 +9,7 @@ class MoveSystem: System {
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {
-            if var move = entity.components[MoveComponent.self] {
+            if let move = entity.components[MoveComponent.self] {
                 entity.position += move.velocity * dt
             }
         }

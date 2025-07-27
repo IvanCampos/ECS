@@ -4,7 +4,7 @@ import SwiftUI
 class FadeSystem: System {
     private static let query = EntityQuery(where: .has(FadeComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)

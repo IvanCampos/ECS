@@ -21,7 +21,7 @@ class MySystem: System {
 
     // Iterate through all entities containing a MyComponent.
     func update(context: SceneUpdateContext) {
-        for entity in context.entities(
+        for _ in context.entities(
             matching: Self.query,
             updatingSystemWhen: .rendering
         ) {

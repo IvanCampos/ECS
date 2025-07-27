@@ -9,7 +9,7 @@ class ColorSystem: System {
     func update(context: SceneUpdateContext) {
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {
             if let colorComp = entity.components[ColorComponent.self], var model = entity.components[ModelComponent.self] {
-                var material = SimpleMaterial(color: UIColor(colorComp.color), isMetallic: false)
+                let material = SimpleMaterial(color: UIColor(colorComp.color), isMetallic: false)
                 model.materials = [material]
                 entity.components.set(model)
             }

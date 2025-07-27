@@ -29,8 +29,8 @@ struct ImmersiveView: View {
                 materials: [SimpleMaterial(color: .cyan, isMetallic: false)]
             )
             
-            // Attach the SpinComponent so SpinSystem will update it.
-            cube.components.set(SpinComponent(speed: .pi)) // π rad ≈ 180 °/s
+            // Attach the RotateComponent so RotateSystem will update it.
+            cube.components.set(RotateComponent(axis: [0, 1, 0], speed: .pi)) // π rad ≈ 180 °/s
             
             anchor.addChild(cube)
             content.add(anchor)

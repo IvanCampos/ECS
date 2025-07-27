@@ -1,4 +1,5 @@
 import RealityKit
+import Foundation
 
 struct BlinkComponent: Component {
     var interval: TimeInterval = 1

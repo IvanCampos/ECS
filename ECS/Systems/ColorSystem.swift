@@ -4,7 +4,7 @@ import SwiftUI
 class ColorSystem: System {
     private static let query = EntityQuery(where: .has(ColorComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {

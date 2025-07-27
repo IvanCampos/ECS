@@ -166,6 +166,66 @@ struct ECSApp: App {
 
         ZigZagComponent.registerComponent()
         ZigZagSystem.registerSystem()
+
+        MoveXComponent.registerComponent()
+        MoveXSystem.registerSystem()
+
+        MoveYComponent.registerComponent()
+        MoveYSystem.registerSystem()
+
+        MoveZComponent.registerComponent()
+        MoveZSystem.registerSystem()
+
+        PulseScaleComponent.registerComponent()
+        PulseScaleSystem.registerSystem()
+
+        ColorCycleComponent.registerComponent()
+        ColorCycleSystem.registerSystem()
+
+        PingPongXComponent.registerComponent()
+        PingPongXSystem.registerSystem()
+
+        PingPongYComponent.registerComponent()
+        PingPongYSystem.registerSystem()
+
+        PingPongZComponent.registerComponent()
+        PingPongZSystem.registerSystem()
+
+        RollXComponent.registerComponent()
+        RollXSystem.registerSystem()
+
+        RollZComponent.registerComponent()
+        RollZSystem.registerSystem()
+
+        FlashScaleComponent.registerComponent()
+        FlashScaleSystem.registerSystem()
+
+        DiagonalDriftComponent.registerComponent()
+        DiagonalDriftSystem.registerSystem()
+
+        RockComponent.registerComponent()
+        RockSystem.registerSystem()
+
+        ShimmerComponent.registerComponent()
+        ShimmerSystem.registerSystem()
+
+        SpiralMoveComponent.registerComponent()
+        SpiralMoveSystem.registerSystem()
+
+        TeleportRandomComponent.registerComponent()
+        TeleportRandomSystem.registerSystem()
+
+        BlinkColorComponent.registerComponent()
+        BlinkColorSystem.registerSystem()
+
+        BounceTiltComponent.registerComponent()
+        BounceTiltSystem.registerSystem()
+
+        SeekRotateComponent.registerComponent()
+        SeekRotateSystem.registerSystem()
+
+        OrbitScaleComponent.registerComponent()
+        OrbitScaleSystem.registerSystem()
     }
     
     var body: some SwiftUI.Scene {

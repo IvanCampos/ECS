@@ -1,9 +1,10 @@
 import RealityKit
 import SwiftUI
+import Combine
 
 class HitHighlightSystem: System {
     private static let query = EntityQuery(where: .has(HitHighlightComponent.self) && .has(ModelComponent.self) && .has(CollisionComponent.self))
-    private var subscriptions: [EventSubscription] = []
+    private var subscriptions: [any Cancellable] = []
 
     required init(scene: RealityKit.Scene) {
         let sub = scene.subscribe(to: CollisionEvents.Began.self) { event in

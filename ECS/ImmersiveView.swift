@@ -844,7 +844,7 @@ struct ImmersiveView: View {
             let hitCube = makeCube()
             hitCube.position = nextPosition()
             hitCube.components.set(HitHighlightComponent())
-            hitCube.components.set(CollisionComponent(shapes: [.generateBox(size: 0.25)]))
+            hitCube.components.set(CollisionComponent(shapes: [.generateBox(size: [10, 0.1, 10])]))
             attachLabel(to: hitCube, text: "HitHighlightComponent")
             anchor.addChild(hitCube)
 

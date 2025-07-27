@@ -11,7 +11,7 @@ class ProximityDetectorSystem: System {
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {
             if var comp = entity.components[ProximityDetectorComponent.self] {
                 var triggered = false
-                for other in context.entities(matching: Self.targets) {
+                for other in context.entities(matching: Self.targets, updatingSystemWhen: .rendering) {
                     if other.id == entity.id { continue }
                     if distance(entity.position, other.position) < comp.radius {
                         triggered = true

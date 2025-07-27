@@ -46,6 +46,66 @@ struct ECSApp: App {
 
         ColorComponent.registerComponent()
         ColorSystem.registerSystem()
+
+        FadeComponent.registerComponent()
+        FadeSystem.registerSystem()
+
+        OrbitComponent.registerComponent()
+        OrbitSystem.registerSystem()
+
+        JitterComponent.registerComponent()
+        JitterSystem.registerSystem()
+
+        DriftComponent.registerComponent()
+        DriftSystem.registerSystem()
+
+        ElasticComponent.registerComponent()
+        ElasticSystem.registerSystem()
+
+        MagnetComponent.registerComponent()
+        MagnetSystem.registerSystem()
+
+        RepelComponent.registerComponent()
+        RepelSystem.registerSystem()
+
+        StrobeComponent.registerComponent()
+        StrobeSystem.registerSystem()
+
+        FlashColorComponent.registerComponent()
+        FlashColorSystem.registerSystem()
+
+        GlowComponent.registerComponent()
+        GlowSystem.registerSystem()
+
+        SpinComponent.registerComponent()
+        SpinSystem.registerSystem()
+
+        TiltComponent.registerComponent()
+        TiltSystem.registerSystem()
+
+        PathMoveComponent.registerComponent()
+        PathMoveSystem.registerSystem()
+
+        ShrinkComponent.registerComponent()
+        ShrinkSystem.registerSystem()
+
+        GrowComponent.registerComponent()
+        GrowSystem.registerSystem()
+
+        ExpireComponent.registerComponent()
+        ExpireSystem.registerSystem()
+
+        OscillateComponent.registerComponent()
+        OscillateSystem.registerSystem()
+
+        SlideComponent.registerComponent()
+        SlideSystem.registerSystem()
+
+        VibrateComponent.registerComponent()
+        VibrateSystem.registerSystem()
+
+        ShakeComponent.registerComponent()
+        ShakeSystem.registerSystem()
     }
     
     var body: some SwiftUI.Scene {

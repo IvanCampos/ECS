@@ -551,6 +551,146 @@ struct ImmersiveView: View {
             attachLabel(to: orbitScaleCube, text: "OrbitScaleComponent")
             anchor.addChild(orbitScaleCube)
 
+            // Sway component example.
+            let swayCube = makeCube()
+            swayCube.position = nextPosition()
+            swayCube.components.set(SwayComponent(amplitudeX: 0.1, amplitudeZ: 0.1, speed: 2, phase: 0, origin: swayCube.position))
+            attachLabel(to: swayCube, text: "SwayComponent")
+            anchor.addChild(swayCube)
+
+            // DriftRotate component example.
+            let driftRotateCube = makeCube()
+            driftRotateCube.position = nextPosition()
+            driftRotateCube.components.set(DriftRotateComponent(velocity: [0.05, 0, 0], rotationSpeed: .pi))
+            attachLabel(to: driftRotateCube, text: "DriftRotateComponent")
+            anchor.addChild(driftRotateCube)
+
+            // BounceScale component example.
+            let bounceScaleCube = makeCube()
+            bounceScaleCube.position = nextPosition()
+            bounceScaleCube.components.set(BounceScaleComponent(amplitude: 0.2, speed: 2, phase: 0))
+            attachLabel(to: bounceScaleCube, text: "BounceScaleComponent")
+            anchor.addChild(bounceScaleCube)
+
+            // FadeColor component example.
+            let fadeColorCube = makeCube()
+            fadeColorCube.position = nextPosition()
+            fadeColorCube.components.set(FadeColorComponent(colorA: [1,1,1], colorB: [0,0,1], speed: 2, phase: 0))
+            attachLabel(to: fadeColorCube, text: "FadeColorComponent")
+            anchor.addChild(fadeColorCube)
+
+            // PulseOpacity component example.
+            let pulseOpacityCube = makeCube()
+            pulseOpacityCube.position = nextPosition()
+            pulseOpacityCube.components.set(PulseOpacityComponent(baseAlpha: 1, amplitude: 0.5, speed: 2, phase: 0))
+            attachLabel(to: pulseOpacityCube, text: "PulseOpacityComponent")
+            anchor.addChild(pulseOpacityCube)
+
+            // StepMove component example.
+            let stepMoveCube = makeCube()
+            stepMoveCube.position = nextPosition()
+            stepMoveCube.components.set(StepMoveComponent(axis: [0,0,1], step: 0.05, interval: 0.5, timer: 0))
+            attachLabel(to: stepMoveCube, text: "StepMoveComponent")
+            anchor.addChild(stepMoveCube)
+
+            // ShakeRotation component example.
+            let shakeRotationCube = makeCube()
+            shakeRotationCube.position = nextPosition()
+            shakeRotationCube.components.set(ShakeRotationComponent(amplitude: .pi/8, speed: 5, phase: 0))
+            attachLabel(to: shakeRotationCube, text: "ShakeRotationComponent")
+            anchor.addChild(shakeRotationCube)
+
+            // GrowFade component example.
+            let growFadeCube = makeCube()
+            growFadeCube.position = nextPosition()
+            growFadeCube.components.set(GrowFadeComponent(growRate: 0.1, fadeRate: 0.1, alpha: 1))
+            attachLabel(to: growFadeCube, text: "GrowFadeComponent")
+            anchor.addChild(growFadeCube)
+
+            // PulseColorScale component example.
+            let pulseColorScaleCube = makeCube()
+            pulseColorScaleCube.position = nextPosition()
+            pulseColorScaleCube.components.set(PulseColorScaleComponent(amplitude: 0.1, colorA: [1,0,0], colorB: [0,1,0], speed: 2, phase: 0))
+            attachLabel(to: pulseColorScaleCube, text: "PulseColorScaleComponent")
+            anchor.addChild(pulseColorScaleCube)
+
+            // DriftColor component example.
+            let driftColorCube = makeCube()
+            driftColorCube.position = nextPosition()
+            driftColorCube.components.set(DriftColorComponent(velocity: [0.05,0,0], speed: 2, phase: 0))
+            attachLabel(to: driftColorCube, text: "DriftColorComponent")
+            anchor.addChild(driftColorCube)
+
+            // OrbitTilt component example.
+            let orbitTiltCube = makeCube()
+            orbitTiltCube.position = nextPosition()
+            orbitTiltCube.components.set(OrbitTiltComponent(center: orbitTiltCube.position, radius: 0.2, speed: 2, angle: 0, tiltAmplitude: .pi/8))
+            attachLabel(to: orbitTiltCube, text: "OrbitTiltComponent")
+            anchor.addChild(orbitTiltCube)
+
+            // PulseRotation component example.
+            let pulseRotationCube = makeCube()
+            pulseRotationCube.position = nextPosition()
+            pulseRotationCube.components.set(PulseRotationComponent(axis: [0,1,0], amplitude: .pi/4, speed: 2, phase: 0))
+            attachLabel(to: pulseRotationCube, text: "PulseRotationComponent")
+            anchor.addChild(pulseRotationCube)
+
+            // OrbitColor component example.
+            let orbitColorCube = makeCube()
+            orbitColorCube.position = nextPosition()
+            orbitColorCube.components.set(OrbitColorComponent(center: orbitColorCube.position, radius: 0.2, speed: 2, angle: 0, colorSpeed: 1, phase: 0))
+            attachLabel(to: orbitColorCube, text: "OrbitColorComponent")
+            anchor.addChild(orbitColorCube)
+
+            // SlideTilt component example.
+            let slideTiltCube = makeCube()
+            slideTiltCube.position = nextPosition()
+            slideTiltCube.components.set(SlideTiltComponent(axis: [1,0,0], speed: 0.2, length: 0.3, position: 0, tiltAmplitude: .pi/8, forward: true))
+            attachLabel(to: slideTiltCube, text: "SlideTiltComponent")
+            anchor.addChild(slideTiltCube)
+
+            // SpinScale component example.
+            let spinScaleCube = makeCube()
+            spinScaleCube.position = nextPosition()
+            spinScaleCube.components.set(SpinScaleComponent(axis: [0,1,0], spinSpeed: .pi, scaleRate: 0.1))
+            attachLabel(to: spinScaleCube, text: "SpinScaleComponent")
+            anchor.addChild(spinScaleCube)
+
+            // BobRotate component example.
+            let bobRotateCube = makeCube()
+            bobRotateCube.position = nextPosition()
+            bobRotateCube.components.set(BobRotateComponent(amplitude: 0.1, speed: 2, rotateSpeed: .pi, phase: 0, origin: bobRotateCube.position.y))
+            attachLabel(to: bobRotateCube, text: "BobRotateComponent")
+            anchor.addChild(bobRotateCube)
+
+            // TiltRandom component example.
+            let tiltRandomCube = makeCube()
+            tiltRandomCube.position = nextPosition()
+            tiltRandomCube.components.set(TiltRandomComponent(amplitude: .pi/8, interval: 1, timer: 0))
+            attachLabel(to: tiltRandomCube, text: "TiltRandomComponent")
+            anchor.addChild(tiltRandomCube)
+
+            // ColorRise component example.
+            let colorRiseCube = makeCube()
+            colorRiseCube.position = nextPosition()
+            colorRiseCube.components.set(ColorRiseComponent(speed: 0.05, colorA: [0,0,1], colorB: [1,0,0], height: 0.5))
+            attachLabel(to: colorRiseCube, text: "ColorRiseComponent")
+            anchor.addChild(colorRiseCube)
+
+            // Jump component example.
+            let jumpCube = makeCube()
+            jumpCube.position = nextPosition()
+            jumpCube.components.set(JumpComponent(height: 0.2, speed: 4, phase: 0, origin: jumpCube.position.y))
+            attachLabel(to: jumpCube, text: "JumpComponent")
+            anchor.addChild(jumpCube)
+
+            // Nudge component example.
+            let nudgeCube = makeCube()
+            nudgeCube.position = nextPosition()
+            nudgeCube.components.set(NudgeComponent(amplitude: 0.05))
+            attachLabel(to: nudgeCube, text: "NudgeComponent")
+            anchor.addChild(nudgeCube)
+
             content.add(anchor)
             
         }

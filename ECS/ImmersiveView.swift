@@ -348,6 +348,126 @@ struct ImmersiveView: View {
             zigzagCube.components.set(ZigZagComponent(axis: [1,0,0], speed: 0.2, length: 0.3))
             anchor.addChild(zigzagCube)
 
+            // MoveX component example.
+            let moveXCube = makeCube()
+            moveXCube.position = nextPosition()
+            moveXCube.components.set(MoveXComponent(speed: 0.1))
+            anchor.addChild(moveXCube)
+
+            // MoveY component example.
+            let moveYCube = makeCube()
+            moveYCube.position = nextPosition()
+            moveYCube.components.set(MoveYComponent(speed: 0.1))
+            anchor.addChild(moveYCube)
+
+            // MoveZ component example.
+            let moveZCube = makeCube()
+            moveZCube.position = nextPosition()
+            moveZCube.components.set(MoveZComponent(speed: 0.1))
+            anchor.addChild(moveZCube)
+
+            // PulseScale component example.
+            let pulseScaleCube = makeCube()
+            pulseScaleCube.position = nextPosition()
+            pulseScaleCube.components.set(PulseScaleComponent(amplitude: 0.2, speed: 2))
+            anchor.addChild(pulseScaleCube)
+
+            // ColorCycle component example.
+            let colorCycleCube = makeCube()
+            colorCycleCube.position = nextPosition()
+            colorCycleCube.components.set(ColorCycleComponent(speed: 0.5))
+            anchor.addChild(colorCycleCube)
+
+            // PingPongX component example.
+            let pingPongXCube = makeCube()
+            pingPongXCube.position = nextPosition()
+            pingPongXCube.components.set(PingPongXComponent(amplitude: 0.1, speed: 2, origin: pingPongXCube.position.x))
+            anchor.addChild(pingPongXCube)
+
+            // PingPongY component example.
+            let pingPongYCube = makeCube()
+            pingPongYCube.position = nextPosition()
+            pingPongYCube.components.set(PingPongYComponent(amplitude: 0.1, speed: 2, origin: pingPongYCube.position.y))
+            anchor.addChild(pingPongYCube)
+
+            // PingPongZ component example.
+            let pingPongZCube = makeCube()
+            pingPongZCube.position = nextPosition()
+            pingPongZCube.components.set(PingPongZComponent(amplitude: 0.1, speed: 2, origin: pingPongZCube.position.z))
+            anchor.addChild(pingPongZCube)
+
+            // RollX component example.
+            let rollXCube = makeCube()
+            rollXCube.position = nextPosition()
+            rollXCube.components.set(RollXComponent(speed: .pi))
+            anchor.addChild(rollXCube)
+
+            // RollZ component example.
+            let rollZCube = makeCube()
+            rollZCube.position = nextPosition()
+            rollZCube.components.set(RollZComponent(speed: .pi))
+            anchor.addChild(rollZCube)
+
+            // FlashScale component example.
+            let flashScaleCube = makeCube()
+            flashScaleCube.position = nextPosition()
+            flashScaleCube.components.set(FlashScaleComponent(interval: 1))
+            anchor.addChild(flashScaleCube)
+
+            // DiagonalDrift component example.
+            let diagonalDriftCube = makeCube()
+            diagonalDriftCube.position = nextPosition()
+            diagonalDriftCube.components.set(DiagonalDriftComponent(velocity: [0.05, 0, 0.05]))
+            anchor.addChild(diagonalDriftCube)
+
+            // Rock component example.
+            let rockCube = makeCube()
+            rockCube.position = nextPosition()
+            rockCube.components.set(RockComponent(amplitude: .pi/8, speed: 3))
+            anchor.addChild(rockCube)
+
+            // Shimmer component example.
+            let shimmerCube = makeCube()
+            shimmerCube.position = nextPosition()
+            shimmerCube.components.set(ShimmerComponent(speed: 3))
+            anchor.addChild(shimmerCube)
+
+            // SpiralMove component example.
+            let spiralMoveCube = makeCube()
+            spiralMoveCube.position = nextPosition()
+            spiralMoveCube.components.set(SpiralMoveComponent(center: spiralMoveCube.position, radius: 0.2, speed: 2, angle: 0, heightSpeed: 0.05))
+            anchor.addChild(spiralMoveCube)
+
+            // TeleportRandom component example.
+            let teleportRandomCube = makeCube()
+            teleportRandomCube.position = nextPosition()
+            teleportRandomCube.components.set(TeleportRandomComponent(interval: 2, range: 0.2))
+            anchor.addChild(teleportRandomCube)
+
+            // BlinkColor component example.
+            let blinkColorCube = makeCube()
+            blinkColorCube.position = nextPosition()
+            blinkColorCube.components.set(BlinkColorComponent(interval: 1, colorA: [1,0,0], colorB: [0,1,0]))
+            anchor.addChild(blinkColorCube)
+
+            // BounceTilt component example.
+            let bounceTiltCube = makeCube()
+            bounceTiltCube.position = nextPosition()
+            bounceTiltCube.components.set(BounceTiltComponent(amplitude: 0.1, speed: 3, origin: bounceTiltCube.position))
+            anchor.addChild(bounceTiltCube)
+
+            // SeekRotate component example.
+            let seekRotateCube = makeCube()
+            seekRotateCube.position = nextPosition()
+            seekRotateCube.components.set(SeekRotateComponent(target: .zero, moveSpeed: 0.1, rotateSpeed: .pi))
+            anchor.addChild(seekRotateCube)
+
+            // OrbitScale component example.
+            let orbitScaleCube = makeCube()
+            orbitScaleCube.position = nextPosition()
+            orbitScaleCube.components.set(OrbitScaleComponent(center: orbitScaleCube.position, radius: 0.2, speed: 2, angle: 0, amplitude: 0.2, phase: 0))
+            anchor.addChild(orbitScaleCube)
+
             content.add(anchor)
             
         }

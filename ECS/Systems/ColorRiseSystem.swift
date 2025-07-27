@@ -5,12 +5,12 @@ import simd
 class ColorRiseSystem: System {
     private static let query = EntityQuery(where: .has(ColorRiseComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)
         for entity in context.entities(matching: Self.query, updatingSystemWhen: .rendering) {
-            if var comp = entity.components[ColorRiseComponent.self], var model = entity.components[ModelComponent.self] {
+            if let comp = entity.components[ColorRiseComponent.self], var model = entity.components[ModelComponent.self] {
                 entity.position.y += comp.speed * dt
                 let t = min(1, entity.position.y / comp.height)
                 let colorVec = comp.colorA * (1 - t) + comp.colorB * t

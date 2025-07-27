@@ -4,7 +4,7 @@ import SwiftUI
 class PulseOpacitySystem: System {
     private static let query = EntityQuery(where: .has(PulseOpacityComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)

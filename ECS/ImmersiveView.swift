@@ -211,7 +211,7 @@ struct ImmersiveView: View {
             // Scale component example.
             let scaleCube = makeCube()
             scaleCube.position = nextPosition()
-            scaleCube.components.set(ScaleComponent(rate: 0.1))
+            scaleCube.components.set(ScaleComponent(rate: 0.01))
             attachLabel(to: scaleCube, text: "ScaleComponent")
             anchor.addChild(scaleCube)
 
@@ -435,7 +435,7 @@ struct ImmersiveView: View {
             // PulseScale component example.
             let pulseScaleCube = makeCube()
             pulseScaleCube.position = nextPosition()
-            pulseScaleCube.components.set(PulseScaleComponent(amplitude: 0.2, speed: 2))
+            pulseScaleCube.components.set(PulseScaleComponent(amplitude: 0.02, speed: 2))
             attachLabel(to: pulseScaleCube, text: "PulseScaleComponent")
             anchor.addChild(pulseScaleCube)
 
@@ -547,7 +547,7 @@ struct ImmersiveView: View {
             // OrbitScale component example.
             let orbitScaleCube = makeCube()
             orbitScaleCube.position = nextPosition()
-            orbitScaleCube.components.set(OrbitScaleComponent(center: orbitScaleCube.position, radius: 0.2, speed: 2, angle: 0, amplitude: 0.2, phase: 0))
+            orbitScaleCube.components.set(OrbitScaleComponent(center: orbitScaleCube.position, radius: 0.2, speed: 0.2, angle: 0, amplitude: 0.2, phase: 0))
             attachLabel(to: orbitScaleCube, text: "OrbitScaleComponent")
             anchor.addChild(orbitScaleCube)
 
@@ -603,7 +603,7 @@ struct ImmersiveView: View {
             // GrowFade component example.
             let growFadeCube = makeCube()
             growFadeCube.position = nextPosition()
-            growFadeCube.components.set(GrowFadeComponent(growRate: 0.1, fadeRate: 0.1, alpha: 1))
+            growFadeCube.components.set(GrowFadeComponent(growRate: 0.01, fadeRate: 0.1, alpha: 1))
             attachLabel(to: growFadeCube, text: "GrowFadeComponent")
             anchor.addChild(growFadeCube)
 
@@ -652,7 +652,7 @@ struct ImmersiveView: View {
             // SpinScale component example.
             let spinScaleCube = makeCube()
             spinScaleCube.position = nextPosition()
-            spinScaleCube.components.set(SpinScaleComponent(axis: [0,1,0], spinSpeed: .pi, scaleRate: 0.1))
+            spinScaleCube.components.set(SpinScaleComponent(axis: [0,1,0], spinSpeed: .pi, scaleRate: 0.01))
             attachLabel(to: spinScaleCube, text: "SpinScaleComponent")
             anchor.addChild(spinScaleCube)
 

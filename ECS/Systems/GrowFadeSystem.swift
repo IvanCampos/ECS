@@ -4,7 +4,7 @@ import SwiftUI
 class GrowFadeSystem: System {
     private static let query = EntityQuery(where: .has(GrowFadeComponent.self) && .has(ModelComponent.self))
 
-    required init(scene: Scene) { }
+    required init(scene: RealityKit.Scene) { }
 
     func update(context: SceneUpdateContext) {
         let dt = Float(context.deltaTime)

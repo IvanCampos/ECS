@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import RealityKit
 
 @main
 struct ECSApp: App {
     
     @State private var appModel = AppModel()
     
-    var body: some Scene {
+    init() {
+        MyComponent.registerComponent()
+        MySystem.registerSystem()
+    }
+    
+    var body: some SwiftUI.Scene {
         WindowGroup {
             ContentView()
                 .environment(appModel)

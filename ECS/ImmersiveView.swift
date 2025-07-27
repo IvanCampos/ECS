@@ -18,6 +18,23 @@ struct ImmersiveView: View {
             if let immersiveContentEntity = try? await Entity(named: "SkyDome", in: realityKitContentBundle) {
                 content.add(immersiveContentEntity)
             }
+            
+            // Anchor one meter in front of the user’s head pose.
+            let anchor = AnchorEntity(.head)
+            anchor.position = [0, 0, -1.0]
+            
+            // Create a cube mesh with a basic material.
+            let cube = ModelEntity(
+                mesh: .generateBox(size: 0.25),
+                materials: [SimpleMaterial(color: .cyan, isMetallic: false)]
+            )
+            
+            // Attach the SpinComponent so SpinSystem will update it.
+            cube.components.set(SpinComponent(speed: .pi)) // π rad ≈ 180 °/s
+            
+            anchor.addChild(cube)
+            content.add(anchor)
+            
         }
     }
 }

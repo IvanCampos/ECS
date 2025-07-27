@@ -286,6 +286,66 @@ struct ECSApp: App {
 
         NudgeComponent.registerComponent()
         NudgeSystem.registerSystem()
+
+        RollYComponent.registerComponent()
+        RollYSystem.registerSystem()
+
+        GlideComponent.registerComponent()
+        GlideSystem.registerSystem()
+
+        ToggleVisibilityComponent.registerComponent()
+        ToggleVisibilitySystem.registerSystem()
+
+        BounceXComponent.registerComponent()
+        BounceXSystem.registerSystem()
+
+        BounceZComponent.registerComponent()
+        BounceZSystem.registerSystem()
+
+        SpinColorComponent.registerComponent()
+        SpinColorSystem.registerSystem()
+
+        ScaleXComponent.registerComponent()
+        ScaleXSystem.registerSystem()
+
+        ScaleYComponent.registerComponent()
+        ScaleYSystem.registerSystem()
+
+        ScaleZComponent.registerComponent()
+        ScaleZSystem.registerSystem()
+
+        TiltXComponent.registerComponent()
+        TiltXSystem.registerSystem()
+
+        TiltYComponent.registerComponent()
+        TiltYSystem.registerSystem()
+
+        TiltZComponent.registerComponent()
+        TiltZSystem.registerSystem()
+
+        JumpXComponent.registerComponent()
+        JumpXSystem.registerSystem()
+
+        JumpZComponent.registerComponent()
+        JumpZSystem.registerSystem()
+
+        SlideYComponent.registerComponent()
+        SlideYSystem.registerSystem()
+
+        SlideZComponent.registerComponent()
+        SlideZSystem.registerSystem()
+
+        PulseWidthComponent.registerComponent()
+        PulseWidthSystem.registerSystem()
+
+        PulseHeightComponent.registerComponent()
+        PulseHeightSystem.registerSystem()
+
+        PulseDepthComponent.registerComponent()
+        PulseDepthSystem.registerSystem()
+
+        OrbitXComponent.registerComponent()
+        OrbitXSystem.registerSystem()
     }
     
     var body: some SwiftUI.Scene {

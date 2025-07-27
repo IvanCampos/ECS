@@ -106,6 +106,66 @@ struct ECSApp: App {
 
         ShakeComponent.registerComponent()
         ShakeSystem.registerSystem()
+
+        BounceComponent.registerComponent()
+        BounceSystem.registerSystem()
+
+        TwistComponent.registerComponent()
+        TwistSystem.registerSystem()
+
+        FlipComponent.registerComponent()
+        FlipSystem.registerSystem()
+
+        HoverComponent.registerComponent()
+        HoverSystem.registerSystem()
+
+        SeekComponent.registerComponent()
+        SeekSystem.registerSystem()
+
+        StretchComponent.registerComponent()
+        StretchSystem.registerSystem()
+
+        RandomColorComponent.registerComponent()
+        RandomColorSystem.registerSystem()
+
+        TeleportComponent.registerComponent()
+        TeleportSystem.registerSystem()
+
+        TransparencyComponent.registerComponent()
+        TransparencySystem.registerSystem()
+
+        SpiralComponent.registerComponent()
+        SpiralSystem.registerSystem()
+
+        PulseColorComponent.registerComponent()
+        PulseColorSystem.registerSystem()
+
+        FlickerComponent.registerComponent()
+        FlickerSystem.registerSystem()
+
+        SnapComponent.registerComponent()
+        SnapSystem.registerSystem()
+
+        BeelineComponent.registerComponent()
+        BeelineSystem.registerSystem()
+
+        BoomerangComponent.registerComponent()
+        BoomerangSystem.registerSystem()
+
+        TwinkleComponent.registerComponent()
+        TwinkleSystem.registerSystem()
+
+        RandomScaleComponent.registerComponent()
+        RandomScaleSystem.registerSystem()
+
+        WobbleComponent.registerComponent()
+        WobbleSystem.registerSystem()
+
+        AlignComponent.registerComponent()
+        AlignSystem.registerSystem()
+
+        ZigZagComponent.registerComponent()
+        ZigZagSystem.registerSystem()
     }
     
     var body: some SwiftUI.Scene {

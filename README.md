@@ -1,5 +1,11 @@
 # Entity Component System
 
+
+
+https://github.com/user-attachments/assets/4157e76d-e3a4-4f8e-90a1-154af8d5f121
+
+
+
 | ENTITY | COMPONENT | SYSTEM |
 |--------|-----------|--------|
 | Lightweight identifier | Describes one aspect of an entity | Applies behavior across multiple entities with particular components |

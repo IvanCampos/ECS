@@ -17,3 +17,5 @@
 [Understanding the modular architecture of RealityKit](https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture)  
 [Implementing systems for entities in a scene](https://developer.apple.com/documentation/RealityKit/implementing-systems-for-entities-in-a-scene)  
 
+## Deep Research (AI) Reports
+[Entity Component System (ECS) in RealityKit for visionOS](https://chatgpt.com/s/dr_68a8da6a96288191bfa24722eb63f3d3)  

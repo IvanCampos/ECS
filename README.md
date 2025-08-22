@@ -12,3 +12,8 @@
 | Since they are containers, a complex object can be created by assembling multiple child entities, each with its own components and animations | | To implement: conform the System protocol and implement two methods: init(scene:) and update(context:) where you perform per-frame updates |
 | To query entities, create a QueryPredicate with your criteria and pass it to an EntityQuery | | Should be lightweight; avoid performing heavy operations in update(context:) because it runs **every frame** |
 | | | Registered using registerSystem(); can be ordered if system depends on another system’s results using dependencies:[] |
+
+##  Developer Resources
+[Understanding the modular architecture of RealityKit](https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture)  
+[Implementing systems for entities in a scene](https://developer.apple.com/documentation/RealityKit/implementing-systems-for-entities-in-a-scene)  
+

@@ -167,6 +167,34 @@ https://github.com/user-attachments/assets/4157e76d-e3a4-4f8e-90a1-154af8d5f121
 | [ToggleVisibilityComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/ToggleVisibilityComponent.swift) | [ToggleVisibilitySystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/ToggleVisibilitySystem.swift) |
 
 
+### Game Mechanics
+| Component | System |
+| --- | --- |
+| [HealthComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/HealthComponent.swift) | [HealthSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/HealthSystem.swift) |
+| [DamageComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/DamageComponent.swift) | [DamageSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/DamageSystem.swift) |
+| [ScoreComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/ScoreComponent.swift) | [ScoreSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/ScoreSystem.swift) |
+| [CollectibleComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/CollectibleComponent.swift) | [CollectibleSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/CollectibleSystem.swift) |
+| [RespawnComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/RespawnComponent.swift) | [RespawnSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/RespawnSystem.swift) |
+| [AmmoComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/AmmoComponent.swift) | [AmmoSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/AmmoSystem.swift) |
+| [FireRateComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/FireRateComponent.swift) | [FireRateSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/FireRateSystem.swift) |
+| [StaminaComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/StaminaComponent.swift) | [StaminaSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/StaminaSystem.swift) |
+| [AIBehaviorComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/AIBehaviorComponent.swift) | [AIBehaviorSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/AIBehaviorSystem.swift) |
+| [PathFollowComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/PathFollowComponent.swift) | [PathFollowSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/PathFollowSystem.swift) |
+| [EnemySpawnComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/EnemySpawnComponent.swift) | [EnemySpawnSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/EnemySpawnSystem.swift) |
+| [PickupComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/PickupComponent.swift) | [PickupSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/PickupSystem.swift) |
+| [QuestComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/QuestComponent.swift) | [QuestSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/QuestSystem.swift) |
+| [DialogComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/DialogComponent.swift) | [DialogSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/DialogSystem.swift) |
+| [InputComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/InputComponent.swift) | [InputSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/InputSystem.swift) |
+| [WeaponComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/WeaponComponent.swift) | [WeaponSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/WeaponSystem.swift) |
+| [ShieldComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/ShieldComponent.swift) | [ShieldSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/ShieldSystem.swift) |
+| [DamageOverTimeComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/DamageOverTimeComponent.swift) | [DamageOverTimeSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/DamageOverTimeSystem.swift) |
+| [HealComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/HealComponent.swift) | [HealSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/HealSystem.swift) |
+| [StatusEffectComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/StatusEffectComponent.swift) | [StatusEffectSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/StatusEffectSystem.swift) |
+| [LevelComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/LevelComponent.swift) | [LevelSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/LevelSystem.swift) |
+| [ExperienceComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/ExperienceComponent.swift) | [ExperienceSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/ExperienceSystem.swift) |
+| [CooldownComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/CooldownComponent.swift) | [CooldownSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/CooldownSystem.swift) |
+| [InventoryComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/InventoryComponent.swift) | [InventorySystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/InventorySystem.swift) |
+| [InteractionComponent](https://github.com/IvanCampos/ECS/blob/main/ECS/Components/InteractionComponent.swift) | [InteractionSystem](https://github.com/IvanCampos/ECS/blob/main/ECS/Systems/InteractionSystem.swift) |
 ##  Developer Resources
 [Understanding the modular architecture of RealityKit](https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture)  
 [Implementing systems for entities in a scene](https://developer.apple.com/documentation/RealityKit/implementing-systems-for-entities-in-a-scene)  
